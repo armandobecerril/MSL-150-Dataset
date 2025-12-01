@@ -1,0 +1,49 @@
+cff-version: 1.2.0
+title: "MSL-150: Mexican Sign Language (MSL) Keypoint Dataset"
+message: "If you use this dataset, please cite it using the metadata below."
+type: dataset
+
+doi: "10.5281/zenodo.17783312"
+url: "https://doi.org/10.5281/zenodo.17783312"
+version: "1.0.0"
+date-released: "2025-01-01"
+
+authors:
+  - family-names: "Becerril Carrillo"
+    given-names: "Armando de Jesús"
+    affiliation: "Universidad Anáhuac México Norte"
+    orcid: "https://orcid.org/0009-0004-4420-1442"
+
+keywords:
+  - Mexican Sign Language
+  - MSL
+  - Sign Language Recognition
+  - MediaPipe Holistic
+  - Keypoint Dataset
+  - Deep Learning
+  - Sequential Models
+  - LSTM
+  - GRU
+
+license: "MIT"
+
+abstract: >
+  MSL-150 is a public keypoint-only dataset of 150 Mexican Sign Language (MSL) 
+  signs, recorded from a native signer and processed using MediaPipe Holistic. 
+  It includes 226 normalized keypoints per frame, 800 samples per class, 
+  and more than 120,000 augmented samples. This dataset is intended for 
+  reproducible research in sign language recognition, keypoint modeling, 
+  and sequential interpretation under controlled, single-signer conditions. 
+  The dataset forms part of the doctoral research project 
+  “Recurrent Neural Networks for the Interpretation of Mexican Sign Language 
+  in Domain-Specific Communication Scenarios.”
+
+preferred-citation:
+  type: dataset
+  title: "MSL-150: Mexican Sign Language (MSL) Keypoint Dataset"
+  authors:
+    - family-names: "Becerril Carrillo"
+      given-names: "Armando de Jesús"
+  year: 2025
+  doi: "10.5281/zenodo.17783312"
+  url: "https://doi.org/10.5281/zenodo.17783312"
