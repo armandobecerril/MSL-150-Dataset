@@ -16,11 +16,11 @@ This dataset forms part of the research:
 
 Zenodo archive (DOI: https://doi.org/10.5281/zenodo.17783312) includes:
 
-├── MSL-150_keypoints.csv # 226 keypoints × frames per sample
-├── npz_samples/ # 120,000 npz samples (augmented)
-├── dataset_dictionary.pdf # variable descriptions and metadata
-├── trained_model_v1.h5 # final GRU model
-└── model_config.json # architecture & hyperparameters
+-  MSL-150_keypoints.csv # 226 keypoints × frames per sample
+-  npz_samples/ # 120,000 npz samples (augmented)
+-  dataset_dictionary.pdf # variable descriptions and metadata
+-  trained_model_v1.h5 # final GRU model
+-  model_config.json # architecture & hyperparameters
 
 
 All samples were extracted using MediaPipe Holistic v0.10.
