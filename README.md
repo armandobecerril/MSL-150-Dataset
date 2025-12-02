@@ -81,50 +81,29 @@ MSL-150/
 ├── CITATION.cff
 ├── README.md
 └── LICENSE
+```
 
-```md
----
+## ⚙️ Technical Summary
+- Total Samples: 120,000
+- Frames per Sample: 30
+- Keypoints per Frame: 226
+- Tensor Shape: 120000 × 30 × 226
+- Augmentation:rotation, illumination changes, temporal speed variation, Gaussian noise
+- Models Evaluated:
+    LSTM (64–128)
+    GRU (64–128)
+- Best Performing Model:
+- Validation accuracy: 0.9978
+- Test precision: 0.9957
+- Narrative-sequence recall: 63.64%
 
-⚙️ Technical Summary
-Total Samples: 120,000
-
-Frames per Sample: 30
-
-Keypoints per Frame: 226
-
-Tensor Shape: 120000 × 30 × 226
-
-Augmentation:
-
-rotation
-
-illumination changes
-
-temporal speed variation
-
-Gaussian noise
-
-Models Evaluated:
-
-LSTM (64–128)
-
-GRU (64–128)
-
-Best Performing Model:
-
-Validation accuracy: 0.9978
-
-Test precision: 0.9957
-
-Narrative-sequence recall: 63.64%
-
-⚖️ License
+## ⚖️ License
 Released under the MIT License.
 
 You may use this dataset freely for research and educational purposes.
 If you use it in a publication, you must cite it.
 
-📚 How to Cite
+## 📚 How to Cite
 CITATION.cff
 Located in the repository root (GitHub + Zenodo).
 
@@ -138,7 +117,7 @@ Copy code
   doi = {10.5281/zenodo.17783312},
   url = {https://doi.org/10.5281/zenodo.17783312}
 }
-🧩 Contact
+## 🧩 Contact
 For questions, dataset issues, or collaboration opportunities:
 
 Armando de Jesús Becerril Carrillo
