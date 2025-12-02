@@ -74,7 +74,12 @@ MSL-150/
 │   └── pipeline_diagram.png
 │
 ├── data/                    # ⚠️ Lightweight GitHub subset ONLY
-│   ├── sample_npy/        # ~200 samples/class extracted from the full dataset
+│   ├── sample_npy/          # ~200 samples/class extracted from the full dataset
+│   │   ├── ambulancia/
+│   │   ├── doctor/
+│   │   ├── dolor/
+│   │   ├── hoy/
+│   │   └── yo/
 │   └── dictionary/
 │       └── variables.json
 │
