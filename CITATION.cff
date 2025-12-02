@@ -1,7 +1,8 @@
 cff-version: 1.2.0
-title: "MSL-150: Mexican Sign Language (MSL) Keypoint Dataset"
-message: "If you use this dataset, please cite it using the metadata below."
 type: dataset
+
+title: "MSL-150: Mexican Sign Language (MSL) Keypoint Dataset for Domain-Specific Vocabulary"
+message: "If you use this dataset, please cite it using the metadata below."
 
 doi: "10.5281/zenodo.17783312"
 url: "https://doi.org/10.5281/zenodo.17783312"
@@ -18,29 +19,34 @@ keywords:
   - Mexican Sign Language
   - MSL
   - Sign Language Recognition
-  - MediaPipe Holistic
   - Keypoint Dataset
+  - MediaPipe Holistic
   - Deep Learning
-  - Sequential Models
+  - Gesture Modeling
+  - Sequential Interpretation
   - LSTM
   - GRU
+  - Domain-Specific Vocabulary
+  - Dataset
 
 license: "MIT"
 
 abstract: >
-  MSL-150 is a public keypoint-only dataset of 150 Mexican Sign Language (MSL) 
-  signs, recorded from a native signer and processed using MediaPipe Holistic. 
-  It includes 226 normalized keypoints per frame, 800 samples per class, 
-  and more than 120,000 augmented samples. This dataset is intended for 
-  reproducible research in sign language recognition, keypoint modeling, 
-  and sequential interpretation under controlled, single-signer conditions. 
-  The dataset forms part of the doctoral research project 
-  “Recurrent Neural Networks for the Interpretation of Mexican Sign Language 
-  in Domain-Specific Communication Scenarios.”
+  MSL-150 is a public keypoint-only dataset of 150 Mexican Sign Language (MSL)
+  signs, recorded from a native MSL signer and processed using MediaPipe Holistic.
+  The dataset includes 226 normalized keypoints per frame, 30 frames per sequence,
+  and 800 samples per class (1 original recording plus 799 augmented variants).
+  With more than 120,000 sequences in total, MSL-150 is designed for reproducible
+  research in sign language recognition, keypoint modeling, and sequential interpretation.
+  This dataset reflects a controlled, single-signer recording environment and is
+  intended for exploratory research, benchmarking, and methodological comparison,
+  not clinical deployment. MSL-150 forms part of the doctoral research project
+  “Recurrent Neural Networks for the Interpretation of Mexican Sign Language in
+  Domain-Specific Communication Scenarios.”
 
 preferred-citation:
   type: dataset
-  title: "MSL-150: Mexican Sign Language (MSL) Keypoint Dataset"
+  title: "MSL-150: Mexican Sign Language (MSL) Keypoint Dataset for Domain-Specific Vocabulary"
   authors:
     - family-names: "Becerril Carrillo"
       given-names: "Armando de Jesús"
