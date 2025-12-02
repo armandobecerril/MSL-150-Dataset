@@ -81,7 +81,8 @@ MSL-150/
 ├── CITATION.cff
 ├── README.md
 └── LICENSE
-⚙️ Technical Summary
+
+--- ⚙️ Technical Summary
 Total Samples: 120,000
 
 Frames per Sample: 30
