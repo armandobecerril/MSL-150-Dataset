@@ -82,7 +82,9 @@ MSL-150/
 ├── README.md
 └── LICENSE
 
---- ⚙️ Technical Summary
+
+---
+⚙️ Technical Summary
 Total Samples: 120,000
 
 Frames per Sample: 30
