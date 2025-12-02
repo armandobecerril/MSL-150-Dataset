@@ -64,10 +64,19 @@ MSL-150/
 │   ├── 02_training_LSTM.ipynb
 │   └── 03_sequence_inference.ipynb
 │
-├── models/                  # Saved models, configs, metrics
-│   ├── trained_model_v1.h5
-│   ├── model_config.json
-│   └── metrics/
+├── models/                  # Trained models from the study
+│   ├── GRU_64/
+│   │    ├── GRU_64.h5
+│   │    └── config.json
+│   ├── GRU_64_128/
+│   ├── GRU_128/
+│   ├── GRU_128_128/
+│   ├── GRU_128_256_128/
+│   ├── LSTM_64/
+│   ├── LSTM_64_128/
+│   ├── LSTM_128/
+│   ├── LSTM_128_128/
+│   └── LSTM_128_256_128/
 │
 ├── docs/                    # Documentation, diagrams, dictionaries
 │   ├── dataset_dictionary.pdf
