@@ -1,27 +1,62 @@
-# Byte-compiled / cache
+###########################################
+# PYTHON CACHE / JUPYTER
+###########################################
 __pycache__/
 *.py[cod]
 *.ipynb_checkpoints/
 
-# Data folders
-data/npy/
-data/raw_videos/
-*.npy
-*.mp4
-*.avi
 
-# Model files
+###########################################
+# RAW DATA (PREVENT FULL DATASET UPLOAD)
+###########################################
+
+# Do NOT upload large raw folders
+data/raw/
+data/raw_npy/
+data/raw_videos/
+data/full/                # any future folder with full dataset
+data/npz_samples/         # augmented data (~120k)
+data/**/*.npz
+
+# Ignore ALL npy files by default (BIG files)
+*.npy
+
+
+###########################################
+# ALLOW SMALL DEMO SUBSET
+###########################################
+
+# EXCEPTION: allow only the lightweight demo samples (~200/class)
+!data/samples_demo/
+!data/samples_demo/**
+# If you keep the name sample_npy, allow it too:
+!data/sample_npy/
+!data/sample_npy/**
+
+
+###########################################
+# MODEL FILES (prevent large binaries)
+###########################################
 models/*.h5
 models/*.json
 models/*.pt
 models/*.onnx
 
-# Environment files
+
+###########################################
+# ENVIRONMENT / SYSTEM FILES
+###########################################
 .env
 .DS_Store
 
-# Zips
+
+###########################################
+# ZIP FILES (except Zenodo uploads)
+###########################################
 *.zip
 
-# VSCode
+
+###########################################
+# EDITOR-SPECIFIC
+###########################################
 .vscode/
