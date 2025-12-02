@@ -1,63 +1,31 @@
 # MSL-150: Mexican Sign Language (MSL) Keypoint Dataset for Domain-Specific Vocabulary
 
-**MSL-150** is a public **keypoint-only** dataset of **150 Mexican Sign Language (MSL)** signs,
-processed with **MediaPipe Holistic** and curated to support **reproducible research** in:
+MSL-150 is a **public keypoint-only dataset** of 150 Mexican Sign Language (MSL) signs,
+processed using **MediaPipe Holistic**, curated to support reproducible research in:
 
 - Sign language recognition  
 - Keypoint-based gesture modeling  
-- Sequence learning and grammar-level interpretation  
+- Sequential and grammar-level sign interpretation  
 
-This dataset accompanies the research:  
+This dataset is part of the doctoral research:  
 **“Recurrent Neural Networks for the Interpretation of Mexican Sign Language in Domain-Specific Communication Scenarios.”**
 
 ---
 
-## 📦 Dataset Contents (Zenodo)
+## 📦 Dataset Contents (Zenodo, Full Version)
 
-The complete dataset is hosted on Zenodo under DOI:  
-👉 **https://doi.org/10.5281/zenodo.17783312**
+🔗 **Full dataset DOI:** https://doi.org/10.5281/zenodo.17783312  
+⚠️ *Due to size limitations, only a small demo subset is stored in GitHub.*
 
-The Zenodo archive includes:
+Zenodo includes:
 
-- **MSL-150_Mexican_Sign_Language_Dataset.csv**  
-  226 keypoints × 30 frames per sequence × 120,000 sequences
+- **MSL-150_keypoints.csv** — 226 keypoints × frames per sample  
+- **npz_samples/** — 120,000+ augmented samples (799 synthetic per class)  
+- **dataset_dictionary.pdf** — variable and metadata glossary  
+- **trained_model_v1.h5** — final GRU architecture  
+- **model_config.json** — hyperparameters & training settings  
 
-- **npy_samples_full/ (120,000 .npy files)**  
-  One `.npy` file per frame (30 per sample), organized by class and sample index  
-
-- **dataset_dictionary.pdf**  
-  Variable descriptions and metadata
-
-- **trained_model_v1.h5**  
-  Final GRU model used in the publication
-
-- **model_config.json**  
-  Model architecture, hyperparameters, and preprocessing information
-
-All samples were extracted using **MediaPipe Holistic v0.10** under controlled recording conditions.
-
----
-
-## 🧪 Representative Sample Included in This Repository
-
-To allow reviewers and users to test the full code **without downloading 14+ GB**, this repository includes a **small representative subset**:
-
-data/sample_npy/
--  ambulancia/
--  dolor/
--  doctor/
--  hoy/
--  yo/
-
-
-Each folder contains **one sequence** (30 frames → 30 `.npy` files) illustrating:
-
-- folder hierarchy  
-- temporal structure (sequence length = 30)  
-- feature dimensionality (226 per frame)  
-- expected preprocessing pipeline  
-
-**The full dataset must be obtained from Zenodo.**
+All data was extracted using **MediaPipe Holistic v0.10**.
 
 ---
 
@@ -65,48 +33,53 @@ Each folder contains **one sequence** (30 frames → 30 `.npy` files) illustrati
 
 - **1 native MSL signer**  
 - **150 isolated sign classes**  
-- **800 samples per class** (1 original + 799 augmented)  
-- **Full HD (1080p) videos recorded at 30 FPS**  
-- Controlled lighting, background, and positioning  
+- **800 original videos per class (full dataset)**  
+- **799 augmented samples per class (full dataset)**  
+- **200 sample excerpts per class included in GitHub (demo only)**  
+- **Full HD (1080p) at 30 FPS**, controlled lighting and background  
 - **226 MediaPipe keypoints per frame**
 
 > ⚠️ **Important:**  
-> This is an **exploratory pilot dataset** and reflects a *single-signer, controlled-environment* setup.  
-> It is intended solely for **reproducibility, benchmarking, and methodological comparison**, not for clinical deployment.
+> This is an **exploratory pilot dataset** recorded from a **single signer** in a **controlled environment**.  
+> GitHub contains only lightweight demo samples.  
+> The complete dataset must be obtained through Zenodo.
 
 ---
 
 ## 📂 Repository Structure
 
+```text
 MSL-150/
-├── src/                     # Core Python modules for loading, training, evaluation
+├── src/                     # Core Python modules (loading, training, evaluation)
 │   ├── data_loader.py
 │   ├── model_lstm.py
 │   ├── model_gru.py
 │   └── utils.py
 │
-├── notebooks/               # Jupyter notebooks for experiments
+├── notebooks/               # Jupyter notebooks for experimentation
 │   ├── 01_data_exploration.ipynb
 │   ├── 02_training_LSTM.ipynb
 │   └── 03_sequence_inference.ipynb
 │
-├── models/                  # Model files and configs
+├── models/                  # Saved models, configs, and metrics
 │   ├── trained_model_v1.h5
 │   ├── model_config.json
 │   └── metrics/
 │
-├── docs/                    # Documentation and diagrams
+├── docs/                    # Diagrams, documentation, variable dictionaries
 │   ├── dataset_dictionary.pdf
 │   └── pipeline_diagram.png
 │
-├── data/                    # Light metadata only (⚠️ Full dataset lives in Zenodo)
-│   ├── samples_demo/        # Small 3–5 demo samples for GitHub
+├── data/                    # Lightweight GitHub subset (📌 NOT the full dataset)
+│   ├── samples_demo/        # ~200 samples/class extracted from original dataset
 │   └── dictionary/
 │       └── variables.json
 │
 ├── CITATION.cff
 ├── README.md
 └── LICENSE
+
+
 ---
 
 ## ⚙️ Technical Summary
