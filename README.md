@@ -79,36 +79,34 @@ Each folder contains **one sequence** (30 frames → 30 `.npy` files) illustrati
 ## 📂 Repository Structure
 
 MSL-150/
-├── src/                 # Core Python modules for dataset loading, model training & evaluation
+├── src/                     # Core Python modules for loading, training, evaluation
 │   ├── data_loader.py
 │   ├── model_lstm.py
 │   ├── model_gru.py
 │   └── utils.py
 │
-├── notebooks/           # Jupyter notebooks for experiments and reproducible workflows
+├── notebooks/               # Jupyter notebooks for experiments
 │   ├── 01_data_exploration.ipynb
 │   ├── 02_training_LSTM.ipynb
 │   └── 03_sequence_inference.ipynb
 │
-├── models/              # Saved models, configs, runtime logs
+├── models/                  # Model files and configs
 │   ├── trained_model_v1.h5
 │   ├── model_config.json
 │   └── metrics/
 │
-├── docs/                # Technical documentation and diagrams
+├── docs/                    # Documentation and diagrams
 │   ├── dataset_dictionary.pdf
 │   └── pipeline_diagram.png
 │
-├── data/                # Light metadata only (⚠️ large dataset lives in Zenodo)
-│   ├── samples_demo/    # 3–5 sample npy/npz files for GitHub
+├── data/                    # Light metadata only (⚠️ Full dataset lives in Zenodo)
+│   ├── samples_demo/        # Small 3–5 demo samples for GitHub
 │   └── dictionary/
 │       └── variables.json
 │
 ├── CITATION.cff
 ├── README.md
 └── LICENSE
-
-
 ---
 
 ## ⚙️ Technical Summary
