@@ -23,10 +23,7 @@ The complete dataset must be obtained from **Zenodo**.
 Zenodo contains:
 
 - **MSL-150_Mexican_Sign_Language_Dataset.csv** — 13.9 GB keypoint master file  
-- **npz_samples/** — 120,000+ samples (1 original + 799 augmented per class)  
-- **dataset_dictionary.pdf** — description of all 226 variables  
-- **trained_model_v1.h5** — final GRU sequence model  
-- **model_config.json** — hyperparameters & training metadata  
+- **npz_samples/** — 120,000+ samples (1 original + 799 augmented per class)   
 
 All keypoints were extracted using **MediaPipe Holistic v0.10**.
 
@@ -105,12 +102,8 @@ MSL-150/
 - Tensor Shape: 120000 × 30 × 226
 - Augmentation:rotation, illumination changes, temporal speed variation, Gaussian noise
 - Models Evaluated:
-    LSTM (64–128)
-    GRU (64–128)
-- Best Performing Model:
-- Validation accuracy: 0.9978
-- Test precision: 0.9957
-- Narrative-sequence recall: 63.64%
+    LSTM
+    GRU
 
 
 ## 📚 How to Cite
