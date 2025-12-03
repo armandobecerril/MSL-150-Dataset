@@ -1,9 +1,0 @@
-{
-  "model_version": "v1",
-  "type": "GRU",
-  "units": [128, 256, 128],
-  "learning_rate": 0.0005,
-  "batch_size": 32,
-  "epochs": 25,
-  "dropout": 0.2
-}

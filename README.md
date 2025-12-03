@@ -53,48 +53,49 @@ All keypoints were extracted using **MediaPipe Holistic v0.10**.
 
 ```text
 MSL-150/
-├── src/                     # Core dataset & model code
-│   ├── data_loader.py
-│   ├── model_lstm.py
-│   ├── model_gru.py
-│   └── utils.py
+├── src/                         # Core dataset & model code
 │
-├── notebooks/               # Jupyter notebooks (full pipeline)
+├── notebooks/
 │   ├── 01_data_exploration.ipynb
 │   ├── 02_training_LSTM.ipynb
-│   └── 03_sequence_inference.ipynb
+│   ├── 03_sequence_inference.ipynb
+│   └── 04_cross_validation.ipynb        # NEW (optional)
 │
-├── models/                  # Trained models from the study
-│   ├── GRU_64/
-│   │    ├── GRU_64.h5
-│   │    └── config.json
-│   ├── GRU_64_128/
-│   ├── GRU_128/
-│   ├── GRU_128_128/
-│   ├── GRU_128_256_128/
-│   ├── LSTM_64/
-│   ├── LSTM_64_128/
-│   ├── LSTM_128/
-│   ├── LSTM_128_128/
-│   └── LSTM_128_256_128/
+├── models/
+│   ├── configs/                 # JSON configs (10 architectures)
+│   │   ├── config_GRU_64.json
+│   │   ├── config_GRU_64_128.json
+│   │   ├── ...
+│   │
+│   ├── trained_models/          # Final models (train/test)
+│   │   ├── GRU_64/
+│   │   ├── GRU_64_128/
+│   │   ├── ...
+│   │
+│   └── trained_models_cv/       # NEW: Cross-Validation models
+│       ├── fold_1/
+│       ├── fold_2/
+│       ├── fold_3/
+│       ├── fold_4/
+│       └── fold_5/
 │
-├── docs/                    # Documentation, diagrams, dictionaries
+├── docs/
+│   ├── figures/                 # Plots (600 dpi)
+│   ├── performance/             # CSV performance logs
+│   │   ├── PERFORMANCE_LSM_MODELS.csv
+│   │   └── PERFORMANCE_LSM_MODELS_CV.csv
 │   ├── dataset_dictionary.pdf
 │   └── pipeline_diagram.png
 │
-├── data/                    # ⚠️ Lightweight GitHub subset ONLY
-│   ├── sample_npy/          # ~200 samples/class extracted from the full dataset
-│   │   ├── ambulancia/
-│   │   ├── doctor/
-│   │   ├── dolor/
-│   │   ├── hoy/
-│   │   └── yo/
-│   └── dictionary/
-│       └── variables.json
+├── data/
+│   ├── dictionary/
+│   ├── raw/                     # Master CSV
+│   ├── raw_npy/                 # Full dataset (ignored in Git)
+│   └── sample_npy/              # Demo subset
 │
 ├── CITATION.cff
-├── README.md
-└── LICENSE
+├── LICENSE
+└── README.md
 ```
 
 ## ⚙️ Technical Summary
@@ -111,11 +112,6 @@ MSL-150/
 - Test precision: 0.9957
 - Narrative-sequence recall: 63.64%
 
-## ⚖️ License
-Released under the MIT License.
-
-You may use this dataset freely for research and educational purposes.
-If you use it in a publication, you must cite it.
 
 ## 📚 How to Cite
 CITATION.cff
