@@ -54,7 +54,7 @@ MSL-150/
 │
 ├── notebooks/
 │   ├── 01_data_exploration.ipynb
-│   ├── 02_training_LSTM.ipynb
+│   ├── 02_training_models.ipynb
 │   ├── 03_sequence_inference.ipynb
 │   └── 04_cross_validation.ipynb        # NEW (optional)
 │
