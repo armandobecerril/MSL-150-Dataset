@@ -56,7 +56,6 @@ MSL-150/
 │   ├── 01_data_exploration.ipynb
 │   ├── 02_training_models.ipynb
 │   ├── 03_sequence_inference.ipynb
-│   └── 04_cross_validation.ipynb        # NEW (optional)
 │
 ├── models/
 │   ├── configs/                 # JSON configs (10 architectures)
