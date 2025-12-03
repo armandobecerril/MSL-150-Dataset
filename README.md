@@ -88,6 +88,8 @@ MSL-150/
 │   ├── raw/                     # Master CSV
 │   ├── raw_npy/                 # Full dataset (ignored in Git)
 │   └── sample_npy/              # Demo subset
+│   └── original_source/
+│   └── cases/
 │
 ├── CITATION.cff
 ├── LICENSE
