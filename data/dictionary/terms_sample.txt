@@ -1,0 +1,5 @@
+ambulancia
+doctor
+dolor
+hoy
+yo
