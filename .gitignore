@@ -1,3 +1,18 @@
+# Allow only the 5 small sample mp4
+!data/original_source/ambulancia_001.mp4
+!data/original_source/doctor_001.mp4
+!data/original_source/dolor_001.mp4
+!data/original_source/hoy_001.mp4
+!data/original_source/yo_001.mp4
+
+# Ignore all other videos
+*.mp4
+
+# Ignore generated data
+data/synthetic_sample_data/
+data/synthetic_sample_data_total/
+data/sample_npy/*
+
 ###########################################
 # PYTHON CACHE / JUPYTER
 ###########################################
