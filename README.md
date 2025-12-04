@@ -97,7 +97,8 @@ MSL-150/
 ```
 
 ## 🧾 Dataset Metadata (ES/EN)
-MSL-150 Dataset v1.0 compiles core and domain-specific Mexican Sign Language (LSM) vocabulary organized by semantic categories. The dataset provides frame-level body and hand keypoints extracted with MediaPipe Holistic and includes synthetic samples to balance classes and enable reproducible research. This section documents categories, counts, variables, and the column schema (RH/LH/POSE) used for processing and analysis
+ES: MSL-150 Dataset v1.0 compila vocabulario básico y temático en Lengua de Señas Mexicana (LSM), organizado por categorías semánticas. El conjunto proporciona anotaciones a nivel de fotograma de puntos clave de manos y cuerpo extraídos con MediaPipe Holistic y se complementa con muestras sintéticas para equilibrar clases y facilitar la reproducibilidad. Este bloque documenta categorías, conteos, variables y el esquema de columnas (RH/LH/POSE) utilizados para el procesamiento y análisis de señas.
+EN: MSL-150 Dataset v1.0 compiles core and domain-specific Mexican Sign Language (LSM) vocabulary organized by semantic categories. The dataset provides frame-level body and hand keypoints extracted with MediaPipe Holistic and includes synthetic samples to balance classes and enable reproducible research. This section documents categories, counts, variables, and the column schema (RH/LH/POSE) used for processing and analysis.
 
  Category | Quantity | Spanish Vocabulary | English Vocabulary |
 |---|---:|---|---|
