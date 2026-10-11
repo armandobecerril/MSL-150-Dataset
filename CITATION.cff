@@ -6,8 +6,9 @@ message: "If you use this dataset, please cite it using the metadata below."
 
 doi: "10.5281/zenodo.17783312"
 url: "https://doi.org/10.5281/zenodo.17783312"
+repository-code: "https://github.com/armandobecerril/MSL-150-Dataset"
 version: "1.0.0"
-date-released: "2025-01-01"
+date-released: "2025-12-01"
 
 authors:
   - family-names: "Becerril Carrillo"
@@ -29,7 +30,11 @@ keywords:
   - Domain-Specific Vocabulary
   - Dataset
 
-license: "MIT"
+# The dataset (keypoint files) is licensed under CC BY 4.0, matching Zenodo.
+# Source code (notebooks) is licensed under MIT; see LICENSE-CODE.
+# Video files and figures depicting the signer are excluded; see README.md.
+license: "CC-BY-4.0"
+license-url: "https://creativecommons.org/licenses/by/4.0/"
 
 abstract: >
   MSL-150 is a public keypoint-only dataset of 150 Mexican Sign Language (MSL)
@@ -45,11 +50,36 @@ abstract: >
   Domain-Specific Communication Scenarios.”
 
 preferred-citation:
-  type: dataset
+  type: data
   title: "MSL-150: Mexican Sign Language (MSL) Keypoint Dataset for Domain-Specific Vocabulary"
   authors:
     - family-names: "Becerril Carrillo"
       given-names: "Armando de Jesús"
+      orcid: "https://orcid.org/0009-0004-4420-1442"
   year: 2025
+  version: "1.0.0"
+  publisher:
+    name: "Zenodo"
   doi: "10.5281/zenodo.17783312"
   url: "https://doi.org/10.5281/zenodo.17783312"
+  license: "CC-BY-4.0"
+
+references:
+  - type: article
+    title: "Recurrent Neural Networks for Mexican Sign Language Interpretation in Healthcare Services"
+    authors:
+      - family-names: "Becerril-Carrillo"
+        given-names: "Armando de Jesús"
+      - family-names: "Selley-Rojas"
+        given-names: "Héctor Julián"
+      - family-names: "Guevara-Martínez"
+        given-names: "Elizabeth"
+    journal: "Sensors"
+    volume: 26
+    issue: 1
+    start: 27
+    year: 2026
+    publisher:
+      name: "MDPI"
+    doi: "10.3390/s26010027"
+    url: "https://www.mdpi.com/1424-8220/26/1/27"
