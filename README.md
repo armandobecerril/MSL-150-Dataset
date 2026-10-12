@@ -92,7 +92,8 @@ MSL-150/
 │   └── cases/
 │
 ├── CITATION.cff
-├── LICENSE
+├── LICENSE                      # CC BY 4.0 (dataset)
+├── LICENSE-CODE                 # MIT (code)
 └── README.md
 ```
 
@@ -168,6 +169,7 @@ Safe resume of processing to avoid duplicates using VIDEO_SAMPLE.
 
 Scope and Intended Use
 Academic research in computer vision and sign linguistics: vocabulary classification, sign recognition, hand/body kinematics, and phonological variation.
+The dataset is licensed under CC BY 4.0, so academic, educational, and commercial use are permitted with attribution (see **License and Commercial Use** below).
 Ethics and Privacy
 Samples are anonymized and/or synthetically derived for research purposes. Responsible use and respect for Deaf communities and LSM users are encouraged
 
@@ -183,19 +185,81 @@ Samples are anonymized and/or synthetically derived for research purposes. Respo
 
 
 ## 📚 How to Cite
-CITATION.cff
-Located in the repository root (GitHub + Zenodo).
 
-BibTeX Citation
-bibtex
-Copy code
+Citation metadata is provided in [`CITATION.cff`](CITATION.cff) (repository root). GitHub's **"Cite this repository"** button reads it automatically.
+
+If you use MSL-150, please cite **both** the dataset and the associated article.
+
+**Dataset (Zenodo):**
+
+> Becerril Carrillo, A. de J. (2025). *MSL-150: Mexican Sign Language (MSL) Keypoint Dataset for Domain-Specific Vocabulary* (Version 1.0.0) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.17783312
+
+```bibtex
 @dataset{Becerril2025_msl150,
-  author = {Armando de Jesús Becerril Carrillo},
-  title = {MSL-150: Mexican Sign Language Keypoint Dataset},
-  year = {2025},
-  doi = {10.5281/zenodo.17783312},
-  url = {https://doi.org/10.5281/zenodo.17783312}
+  author    = {Becerril Carrillo, Armando de Jesús},
+  title     = {MSL-150: Mexican Sign Language (MSL) Keypoint Dataset for Domain-Specific Vocabulary},
+  year      = {2025},
+  version   = {1.0.0},
+  publisher = {Zenodo},
+  doi       = {10.5281/zenodo.17783312},
+  url       = {https://doi.org/10.5281/zenodo.17783312}
 }
+```
+
+**Article (Sensors, MDPI):**
+
+> Becerril-Carrillo, A. de J., Selley-Rojas, H. J., & Guevara-Martínez, E. (2026). Recurrent Neural Networks for Mexican Sign Language Interpretation in Healthcare Services. *Sensors, 26*(1), 27. https://doi.org/10.3390/s26010027
+
+```bibtex
+@article{BecerrilCarrillo2026_sensors,
+  author  = {Becerril-Carrillo, Armando de Jesús and Selley-Rojas, Héctor Julián and Guevara-Martínez, Elizabeth},
+  title   = {Recurrent Neural Networks for Mexican Sign Language Interpretation in Healthcare Services},
+  journal = {Sensors},
+  year    = {2026},
+  volume  = {26},
+  number  = {1},
+  pages   = {27},
+  doi     = {10.3390/s26010027},
+  url     = {https://www.mdpi.com/1424-8220/26/1/27}
+}
+```
+
+---
+
+## ⚖️ License and Commercial Use
+
+### What is licensed, and how
+
+| Component | License |
+|---|---|
+| **MSL-150 dataset** — keypoint files (`MSL-150_Mexican_Sign_Language_Dataset.csv`, `.npy`/`.npz` samples incl. `data/sample_npy/`), the vocabulary dictionary (`data/dictionary/`), training logs (`models/`), and documentation/result figures | **[Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/)** — full text in [`LICENSE`](LICENSE). Same license as the [Zenodo record](https://doi.org/10.5281/zenodo.17783312). |
+| **Source code** — Jupyter notebooks (`notebooks/`) and any code in `src/` | **MIT License** — see [`LICENSE-CODE`](LICENSE-CODE). |
+| **Video files and images depicting the signer** — `data/original_source/*.mp4`, `data/cases/*.mp4`, `docs/figures/fig_doctor_wrist_*`, `docs/figures/mediapipe_landmark_index_map.*`, and any notebook output showing the signer | **Not covered by CC BY 4.0 or MIT.** Included in this GitHub repository only as illustrative examples for research reproducibility; they are not part of the published dataset. All rights reserved; their use is limited to the research purposes for which the recording authorization was granted. Do not redistribute or reuse them commercially without written permission. |
+| **Third-party software** — e.g., MediaPipe, TensorFlow/Keras, NumPy | Governed by their own licenses (not redistributed here). |
+
+### Under CC BY 4.0 you may (dataset)
+
+- **Use** the dataset for any purpose — academic, educational, **and commercial** (e.g., training or benchmarking models in commercial products).
+- **Redistribute** it in any medium or format.
+- **Modify** it — subsets, re-normalization, new augmentations, format conversions, merging with other data — and share the result.
+
+### Conditions
+
+- **Attribution:** credit the author, cite the dataset DOI (`10.5281/zenodo.17783312`), link to the license, and **indicate if changes were made**. Citing the associated article is strongly recommended.
+- **No endorsement:** you may not suggest that the author, Universidad Anáhuac México, or the signer endorse you or your use.
+- **No additional restrictions:** you may not apply legal terms or technological measures that prevent others from doing what the license permits.
+- Modified versions may be released under a license of your choice, but must keep attribution and must not imply they are the original dataset.
+
+### Scientific limitations for production use
+
+The license grants permission; it does **not** certify fitness for any purpose. The dataset is provided **"as is", without warranties** (CC BY 4.0, Section 5). Before using MSL-150 in a product or service, note that:
+
+- It is an **exploratory pilot dataset** recorded from **a single right-handed native signer** in a controlled environment (uniform lighting and background). Models trained on it are not expected to generalize to other signers, regional variants, lighting conditions, or camera setups.
+- It covers **150 isolated signs**; it does not model continuous signing, grammar, facial grammatical markers, or the full lexicon of LSM.
+- Most samples (799 of 800 per class) are **synthetic augmentations** of a single original recording per class.
+- It is **not validated for clinical, medical, emergency, legal, or other safety-critical communication**, and must not replace qualified human LSM interpreters in such settings.
+- Responsible use and engagement with Deaf communities and LSM users are strongly encouraged.
+
 ## 🧩 Contact
 For questions, dataset issues, or collaboration opportunities:
 
